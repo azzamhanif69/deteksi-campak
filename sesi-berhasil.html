@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deteksi Campak</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f7e7e1;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #8d4f46;
+        padding: 10px 20px;
+      }
+
+      .logo img {
+        height: 50px;
+      }
+
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+
+      nav ul li {
+        margin-right: 20px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+
+      nav ul li a.active {
+        background-color: #e57261;
+        border: 2px solid #00bfff;
+        color: black;
+      }
+
+      nav ul li a:hover {
+        background-color: #e57261;
+      }
+
+      .hero {
+        position: relative;
+        padding: 50px;
+        background-color: #f7e7e1;
+        color: #333;
+        background-image: url("gambar/kanan.png"), url("gambar/kiri.png"),
+          url("path/to/your/image3.png");
+        background-position: right top, right center, right bottom;
+        background-repeat: no-repeat;
+        background-size: 100px 100px, 100px 100px, 100px 100px;
+      }
+
+      .hero-text {
+        position: relative;
+        z-index: 2;
+        max-width: 50%;
+      }
+
+      .hero-text h1 {
+        font-size: 2.5em;
+      }
+
+      .hero-text p {
+        font-size: 1.2em;
+        margin: 20px 0;
+      }
+
+      button {
+        background-color: #e57261;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1em;
+        cursor: pointer;
+      }
+
+      .information {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+      }
+
+      .info-item {
+        width: 300px;
+        border: 2px solid transparent;
+        border-radius: 15px;
+        overflow: hidden;
+        margin: 20px auto;
+        background-color: #f7e7e1;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .info-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      }
+
+      .info-item img {
+        width: 100%;
+        height: 200px;
+        border-bottom: 2px solid #00bfff;
+        border-radius: 15px 15px 0 0;
+        object-fit: cover;
+      }
+
+      .info-item p {
+        text-align: center;
+        font-size: 1.2em;
+        margin: 10px 0;
+        color: #333;
+        padding: 10px;
+      }
+
+      .data {
+        background-color: white;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 10px;
+      }
+
+      footer {
+        background-color: #f7e7e1;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 2px solid #e57261;
+      }
+
+      .footer-content {
+        display: flex;
+        align-items: center;
+      }
+
+      .footer-logo {
+        height: 40px;
+        margin-right: 10px;
+      }
+
+      footer p {
+        margin: 0;
+        color: #333;
+      }
+
+      footer a {
+        color: #333;
+        text-decoration: none;
+      }
+
+      .health-check {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+        background-color: #f7e7e1;
+        padding: 20px;
+      }
+
+      .health-status {
+        text-align: center;
+        border: 2px solid black;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #fff7f0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .health-status .status-icon {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+      }
+
+      .health-status h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+      }
+
+      .health-status ul {
+        list-style-type: disc;
+        padding-left: 20px;
+        text-align: left;
+      }
+
+      .health-status ul li {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="gambar/logo.png" alt="Deteksi Campak" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="formulir.html" class="active">Deteksi</a></li>
+          <li><a href="edukasi.html">Edukasi</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="health-check">
+        <div class="health-status">
+          <img
+            src="gambar/checkmark.png"
+            alt="Anda Sehat"
+            class="status-icon"
+          />
+          <h2>Anda Sehat</h2>
+          <ul>
+            <li>Jaga kesehatan Anda dengan menerapkan pola hidup sehat</li>
+            <li>Hindari kontak dengan penderita campak</li>
+            <li>
+              Segera periksa ke dokter atau fasilitas kesehatan terdekat apabila
+              merasa tidak sehat
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <img src="gambar/logo.png" alt="Deteksi Campak" class="footer-logo" />
+        <p>&copy; 2024 Deteksicampak.com. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

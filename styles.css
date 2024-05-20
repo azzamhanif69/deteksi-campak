@@ -1,0 +1,240 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7e7e1;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #8d4f46;
+  padding: 10px 20px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+nav ul li a.active {
+  background-color: #e57261;
+  border: 2px solid #00bfff;
+  color: black;
+}
+
+nav ul li a:hover {
+  background-color: #e57261;
+}
+
+.hero {
+  position: relative;
+  padding: 50px;
+  background-color: #f7e7e1;
+  color: #333;
+  background-image: url("path/to/your/image1.png"),
+    url("path/to/your/image2.png"), url("path/to/your/image3.png");
+  background-position: right top, right center, right bottom;
+  background-repeat: no-repeat;
+  background-size: 100px 100px, 100px 100px, 100px 100px;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 2.5em;
+}
+
+.hero-text p {
+  font-size: 1.2em;
+  margin: 20px 0;
+}
+
+button {
+  background-color: #e57261;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.information {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.info-item {
+  width: 300px;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 20px auto;
+  background-color: #f7e7e1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.info-item img {
+  width: 100%;
+  height: 200px;
+  border-bottom: 2px solid #00bfff;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+
+.info-item p {
+  text-align: center;
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: #333;
+  padding: 10px;
+}
+
+.data {
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #f7e7e1;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid #e57261;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+footer p {
+  margin: 0;
+  color: #333;
+}
+
+footer a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* New CSS for the form section */
+.form-section {
+  background-color: #fff7f0;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-header h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.form-header p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.measles-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1 1 calc(50% - 20px);
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  padding: 10px;
+  border: 2px solid #e57261;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.form-group.symptoms,
+.form-group.contact-history,
+.form-group.vaccine-history {
+  flex: 1 1 100%;
+}
+
+.form-group.symptoms p,
+.form-group.contact-history p,
+.form-group.vaccine-history p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.form-group.symptoms label,
+.form-group.contact-history label,
+.form-group.vaccine-history label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.form-group.symptoms label input,
+.form-group.contact-history label input,
+.form-group.vaccine-history label input {
+  margin-right: 10px;
+}
+
+.measles-form button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
