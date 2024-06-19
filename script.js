@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   // Sample data for Measles cases in Indonesia
   const dataKasus = [
-    { year: 2020, cases: 1234 },
-    { year: 2021, cases: 2345 },
-    { year: 2022, cases: 3456 },
+    { year: 2020, cases: 310 },
+    { year: 2021, cases: 132 },
+    { year: 2022, cases: 4845 },
   ];
 
   const dataContainer = document.getElementById("data-kasus");
@@ -132,10 +132,10 @@ function checkForm() {
     batuk &&
     pilek &&
     !nyeriTenggorokan &&
-    !mataMerah &&
+    mataMerah &&
     !mataSensitif &&
     !bintikKoplik &&
-    !ruamMerah &&
+    ruamMerah &&
     kontakYa &&
     vaksinYa
   ) {
@@ -143,6 +143,21 @@ function checkForm() {
   } else if (allSymptoms && kontakYa && vaksinTidak) {
     window.location.href = "sesi-positif.html";
   } else {
-    alert("Kondisi tidak terpenuhi.");
+    window.location.href = "sesi-berhasil.html";
   }
 }
+document.querySelectorAll(".show-more-btn").forEach((btn) => {
+  btn.addEventListener("click", function () {
+    const moreContent = this.previousElementSibling;
+    if (
+      moreContent.style.display === "none" ||
+      moreContent.style.display === ""
+    ) {
+      moreContent.style.display = "inline";
+      this.textContent = "Show less <<";
+    } else {
+      moreContent.style.display = "none";
+      this.textContent = "Show more >>";
+    }
+  });
+});
